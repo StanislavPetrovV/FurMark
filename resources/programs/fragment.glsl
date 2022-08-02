@@ -51,7 +51,7 @@ vec3 getNormal(vec3 p) {
 
 float rayMarch(vec3 ro, vec3 rd) {
     float dist = 0.0;
-    for (int i = 0; i < 256; i++) {
+    for (int i = 0; i < 64; i++) {
         vec3 p = ro + dist * rd;
 
         rotate(p);
