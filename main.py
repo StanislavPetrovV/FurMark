@@ -30,7 +30,7 @@ class App(mglw.WindowConfig):
         except KeyError:
             print(f'{u_name} not used in shader')
 
-    def render(self, time, frame_time):
+    def on_render(self, time, frame_time):
         self.ctx.clear()
         self.set_uniform('u_time', time)
         self.quad.render(self.program)
